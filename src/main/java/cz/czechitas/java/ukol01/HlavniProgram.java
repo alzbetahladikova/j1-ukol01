@@ -4,6 +4,7 @@ import cz.czechitas.java.ukol01.engine.*;
 
 public class HlavniProgram {
     Turtle zofka = new Turtle();
+
     public void start() {
 
 
@@ -17,24 +18,24 @@ public class HlavniProgram {
 
  */
 
-nakresliSlunicko(200,100);
-nakresliDomek(200,400);
-nakresliDomek(350,400);
-nakresliDomek(500,400);
-nakresliDomek(650,400);
-nakresliDomek(800,400);
-nakresliDomek(200,650);
-nakresliDomek(800,650);
-nakresliPrasatko(500,500);
+        nakresliSlunicko(200, 100);
+        nakresliDomek(200, 400);
+        nakresliDomek(350, 400);
+        nakresliDomek(500, 400);
+        nakresliDomek(650, 400);
+        nakresliDomek(800, 400);
+        nakresliDomek(200, 650);
+        nakresliDomek(800, 650);
+        nakresliPrasatko(500, 500);
 
 
-      pismenoA(50,800);
-       pismenoL(300,800);
-       pismenoZSHackem(400,800);
-       pismenoB(550,800);
-       pismenoESHackem(630,800);
-        pismenoT(750,800);
-        pismenoA(900,800);
+        pismenoA(50, 800);
+        pismenoL(300, 800);
+        pismenoZSHackem(400, 800);
+        pismenoB(550, 800);
+        pismenoESHackem(630, 800);
+        pismenoT(750, 800);
+        pismenoA(900, 800);
 
 
     }
@@ -75,7 +76,8 @@ nakresliPrasatko(500,500);
             zofka.turnLeft(90);
             zofka.move(60);
             zofka.turnLeft(90);
-            zofka.move(70);}
+            zofka.move(70);
+        }
         zofka.turnLeft(90);
     }
 
@@ -83,19 +85,19 @@ nakresliPrasatko(500,500);
         zofka.setLocation(x, y);
         zofka.move(120);
         zofka.turnRight(90);
-        for (int a = 0;a < 90; a++) {
+        for (int a = 0; a < 90; a++) {
             zofka.move(1);
             zofka.turnRight(2);
         }
         zofka.turnRight(180);
-        for (int a = 0;a < 90; a++) {
+        for (int a = 0; a < 90; a++) {
             zofka.move(1);
             zofka.turnRight(2);
         }
         zofka.turnRight(90);
     }
 
-    private void pismenoZSHackem(double x,double y) {
+    private void pismenoZSHackem(double x, double y) {
         zofka.setLocation(x, y);
         zofka.turnRight(45);
         zofka.move(180);
@@ -121,7 +123,7 @@ nakresliPrasatko(500,500);
     }
 
     private void pismenoL(double x, double y) {
-        zofka.setLocation(x,y);
+        zofka.setLocation(x, y);
         zofka.move(120);
         zofka.turnLeft(180);
         zofka.move(120);
@@ -130,8 +132,8 @@ nakresliPrasatko(500,500);
         zofka.turnLeft(90);
     }
 
-    private void pismenoA(double x,double y) {
-        zofka.setLocation(x,y);
+    private void pismenoA(double x, double y) {
+        zofka.setLocation(x, y);
         zofka.turnRight(45);
         zofka.move(50);
         zofka.turnRight(45);
@@ -150,11 +152,13 @@ nakresliPrasatko(500,500);
         for (int i = 0; i < 360; i++) {
             zofka.move(1);
             zofka.turnLeft(1);
-        }}
+        }
+    }
+
     private void nakresliSlunicko(double x, double y) {
         zofka.setLocation(x, y);
         for (int i = 0; i < 10; i++) {
-            for (int a = 0;a < 36; a++) {
+            for (int a = 0; a < 36; a++) {
                 zofka.move(1);
                 zofka.turnLeft(1);
             }
@@ -165,6 +169,7 @@ nakresliPrasatko(500,500);
             zofka.turnRight(90);
         }
     }
+
     private void nakresliDomek(double x, double y) {
         zofka.setLocation(x, y);
         for (int i = 0; i < 4; i++) {
@@ -178,6 +183,7 @@ nakresliPrasatko(500,500);
         zofka.move(70.7);
         zofka.turnRight(135);
     }
+
     private void nakresliMnohouhelnik(double x, double y) {
         zofka.setLocation(x, y);
         zofka.move(50);
@@ -189,7 +195,7 @@ nakresliPrasatko(500,500);
         zofka.move(50);
     }
 
-    private void nakresliPrasatko(double x,double y) {
+    private void nakresliPrasatko(double x, double y) {
         zofka.setLocation(x, y);
         zofka.turnLeft(90);
 
@@ -223,7 +229,7 @@ nakresliPrasatko(500,500);
         zofka.move(40);
         zofka.turnLeft(150);
 
-}
+    }
 
     public static void main(String[] args) {
         new HlavniProgram().start();
