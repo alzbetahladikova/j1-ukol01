@@ -10,7 +10,7 @@ public class HlavniProgram {
         //TODO implementace domácího úkolu
 
 
-        nakresliPrasatko(200,200);
+        nakresliPrasatko(200,50);
     }
 
     private void nakresliPrasatko(double x,double y) {
